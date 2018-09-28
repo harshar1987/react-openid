@@ -1,0 +1,85 @@
+ul li {
+  background: #ffffff;
+  opacity: 0.9;
+  list-style: none;
+  border: 1px solid #c3c3c3;
+  border-radius: 4px;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 2px;
+  height: 50px;
+  text-align: left;
+}
+
+/* ul li a:link, a:visited {
+    text-decoration:  none;
+    
+    padding-bottom: 1px;
+    border-bottom: 1px solid #3498db;
+    transition: border-bottom 0.2s, color 0.2s;
+  }
+
+ul li div a:hover,
+a:active {
+  color: #555;
+  border-bottom: 1px solid transparent;
+} */
+
+.meetingLink {
+  width: 100%;
+  display: inline-flex;
+  font-size: 75%;
+}
+
+.meetingLink:hover {
+  border: 4px solid #99cbed;
+  transition: border 0.2s;
+}
+
+.meetingName,
+.boardName {
+  width: 75%;
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.6em;
+  text-overflow: ellipsis;
+  letter-spacing: 0.12em;
+  color: #124364;
+  font-weight: bold;
+}
+
+.meetingName a:active,
+.meetingName a:visited,
+.boardName a:active,
+.boardName a:visited {
+  font-size: 1.1em;
+  color: #124364;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+}
+
+.meetingName a:hover {
+  color: #fff;
+}
+
+.meetingDate,
+.boardPeriod {
+  width: 25%;
+  letter-spacing: 0.1em;
+  font-size: 90%;
+  line-height: 1.6em;
+}
+.meetingDate span,
+.boardPeriod span {
+  width: 100%;
+  text-align: right;
+  margin-right: 0.5em;
+  float: right;
+  color: #124364;
+  font-size: 1.1em;
+  /* margin-top: 5px; */
+}

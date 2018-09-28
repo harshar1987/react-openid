@@ -1,0 +1,29 @@
+.flexBox {
+  display: flex;
+  flex-direction: row;
+}
+
+.comboBox {
+  -webkit-appearance: button;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  background-image: url("https://opengovtest.azurewebsites.net/images/dropdown.png");
+  background-size: 16px 16px;
+  background-position: 90% center;
+  background-repeat: no-repeat;
+  border: 1px solid #aaa;
+  color: #555;
+  margin-bottom: 1rem;
+  padding: 10px;
+  width: 100%;
+}
+
+.comboBox:hover {
+  border: 4px solid #5faee3;
+  transition: border 0.2s;
+}
+.combobox option:selected {
+  background-color: red;
+}

@@ -1,0 +1,164 @@
+/* Header */
+
+header {
+  flex: 1 auto;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("https://opengovtest.azurewebsites.net/images/lofoten.png");
+  padding: 0;
+  width: 100%vh;
+  height: 25%vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: block;
+  overflow: hidden;
+  margin: 10px;
+}
+
+/* Header */
+
+/* Site logo */
+.siteLogo img {
+  height: 5vh;
+  margin-left: 1vh;
+}
+/* Site logo */
+
+/* Site Title */
+.siteTitle {
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-left: 5vh;
+  justify-content: center;
+}
+
+.siteTitle > cite {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  word-spacing: 0.3em;
+  font-size: 80%;
+  font-style: normal;
+}
+/* Site Title */
+
+/* Login */
+.siteLogin {
+  font-size: 90%;
+  justify-content: flex-end;
+}
+
+.siteLogin > a {
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  font-size: 80%;
+  font-style: normal;
+}
+
+.siteLogin > a > svg {
+  color: #fff;
+  margin-right: 2vh;
+}
+/* Login */
+
+/* SearchBox */
+.searchBox {
+  font-size: 90%;
+  padding-top: 1rem;
+  justify-content: center;
+}
+
+.searchBox > input {
+  margin-right: 0.2rem;
+  height: 20px;
+  padding: 20px 0 20px 20px;
+  border-color: rgb(250, 246, 246);
+  border-radius: 5px;
+  font-style: italic;
+  letter-spacing: 1px;
+  font-size: 90%;
+  border: 1px solid rgb(119, 119, 119);
+  width: 50vh;
+}
+
+.searchBox > input:hover,
+.searchBox > input.active {
+  border: 4px solid #99cbed;
+  transition: border 0.2s, color 0.2s;
+}
+
+.searchBox > button {
+  margin-top: 0.1vh;
+  background-color: #3498db;
+  border: 1px solid #3498db;
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+}
+
+.searchBox > button svg {
+  color: #ffffff;
+}
+
+.searchBox > button:hover,
+.searchBox > button:active {
+  background-color: #1c6a9e;
+  border-color: #1c6a9e;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+/* SearchBox */
+
+/* Reusable */
+
+a:link,
+a:visited {
+  color: #3498db;
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #3498db;
+  transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+  color: #555;
+  border-bottom: 1px solid transparent;
+}
+
+.btn,
+.btn,
+input[type="submit"] {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 5vh;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full,
+.btn-full,
+input[type="submit"] {
+  background-color: #3498db;
+  border: 1px solid #3498db;
+  color: #fff;
+  margin-right: 15px;
+}
+
+.btn:hover,
+.btn:active,
+input[type="submit"]:hover,
+input[type="submit"]:active {
+  background-color: #1c6a9e;
+  border-color: #1c6a9e;
+}
+
+.btn-full:hover,
+.btn-full:active {
+  background-color: #1c6a9e;
+  border-color: #1c6a9e;
+}
+
+/* Reusable */

@@ -1,0 +1,81 @@
+/* turn it off completely */
+select:active,
+select:hover {
+  outline: none;
+}
+
+/* make it red instead (with with same width and style) */
+select:active,
+select:hover {
+  outline-color: red;
+  background-color: #e5e5e5;
+}
+
+.option {
+  font-size: 10%;
+}
+
+.label {
+  display: inline-flex;
+  text-align: left;
+  font-size: 70%;
+  margin: 0 0 0.5vh 0.5vh;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  word-spacing: 0.3em;
+  font-style: normal;
+  color: #fff;
+}
+
+.findMeetings {
+  margin: 1vh;
+}
+.findMeetings-Header {
+  width: 100%;
+  display: inline-flex;
+  margin: 5px 0 0 5px;
+  color: #fff;
+}
+
+.findMeetings-Header h2 {
+  margin-left: 2%;
+  margin-top: 0.8vh;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  word-spacing: 0.3em;
+  font-size: 80%;
+  font-style: normal;
+}
+
+.findMeetings-Header svg {
+  margin-top: 0.5vh;
+}
+
+.findMeetings-Container {
+  width: 100%;
+  display: inline-flex;
+  margin: 2vh 0 0 0;
+  opacity: 0.9;
+}
+
+.comboBox-month {
+  width: 100%;
+}
+
+.comboBox-year {
+  width: 100%;
+}
+
+.selectedMonth {
+  padding-left: 5vh;
+}
+
+.selectedDate {
+  text-align: center;
+  padding-top: 4vh;
+}
+
+.findMeetings-List {
+  margin-bottom: 5vh;
+}

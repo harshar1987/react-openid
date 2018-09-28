@@ -1,0 +1,33 @@
+aside {
+  float: right;
+  width: 40%;
+}
+
+.meetings {
+  background: linear-gradient(to bottom, #05131c 0%, #3498db 150%);
+}
+
+/* Find Meeting */
+
+/* Find Meeting */
+
+/* Latest Meeting */
+
+/* Latest Meeting */
+
+/* Boards */
+
+.boards {
+  background: linear-gradient(to bottom, #05131c 0%, #3498db 150%);
+}
+
+/* Boards */
+
+/* Content */
+
+.content {
+  margin: 1vh;
+  width: auto;
+}
+
+/* Content */

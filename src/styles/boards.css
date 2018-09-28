@@ -1,0 +1,28 @@
+.boards {
+  margin: 1vh;
+}
+.boards-Header {
+  width: 100%;
+  display: inline-flex;
+  margin: 5px 0 10px 5px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  word-spacing: 0.3em;
+  font-size: 80%;
+  font-style: normal;
+}
+
+.boards-Header h2 {
+  margin-left: 2%;
+  font-size: 120%;
+  margin-top: 0.3vh;
+  color: #ffffff;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0.12em;
+}
+
+.boards-Header svg {
+  margin-top: 0.5vh;
+}
