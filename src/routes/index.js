@@ -1,7 +1,6 @@
 import React from "react";
 import { Route, Switch } from "react-router";
-import { HomePage } from "../pages";
-import { CallbackPage } from "../pages";
+import { HomePage, CallbackPage } from "../pages";
 
 export const routes = (
   <Switch>
