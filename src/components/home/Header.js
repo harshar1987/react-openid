@@ -1,13 +1,20 @@
 import React from "react";
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { oidcProvider, UserManager } from "../../utils/oidc";
+import { connect } from "react-redux";
+
+import {Login} from "./Login";
+import {Logout} from "./Logout";
+
 import siteInfo from "../../services/siteInfoService";
 
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import "../../styles/header.css";
 
 class Header extends React.Component {
   constructor(props) {
+
     super(props);
+
     this.onMicrosoftLogin = this.onMicrosoftLogin.bind(this);
     this.props.faLibrary.add(faSearch);
   }
@@ -19,11 +26,18 @@ class Header extends React.Component {
     odicUserManager.signinRedirect();
   }
 
+  onMicrosoftLogout(e){
+    e.preventDefault();
+  }
+
   storeLoginProvider(providerName) {
     localStorage.setItem("Provider", providerName);
   }
 
   render() {
+
+    const {user} = this.props;
+
     return (
       <header>
         <div className="flexBox">
@@ -33,12 +47,9 @@ class Header extends React.Component {
           <div className="col span-4-of-12 flexBox siteTitle">
             <cite>Political meetings and agenda</cite>
           </div>
-          <div className="col span-4-of-12 flexBox siteLogin">
-            <a className="btn btn-full" onClick={this.onMicrosoftLogin}>
-              <this.props.FontAwesomeIcon icon={["fab", "windows"]} />
-              Login with Microsoft
-            </a>
-          </div>
+          {!user || user.expired ? 
+          <Login FontAwesomeIcon={this.props.FontAwesomeIcon} onMicrosoftLogin={this.onMicrosoftLogin} /> 
+          : <Logout onMicrosoftLogout={this.onMicrosoftLogout}/>}
         </div>
         <div className="col span-2-of-2 bannerImage">
           <div className="col span-2-of-2 flexBox searchBox">
@@ -53,4 +64,10 @@ class Header extends React.Component {
   }
 }
 
-export default Header;
+const mapStateToProps = state => ({ user: state.oidc.user })
+
+const mapDispatchToProps = dispatch => ({ dispatch });
+
+export default connect(mapStateToProps, mapDispatchToProps)(Header);
+
+
