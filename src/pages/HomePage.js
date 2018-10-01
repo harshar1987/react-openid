@@ -19,7 +19,7 @@ import "../styles/content.css";
 
 library.add(fab);
 
-const Home = () => {
+export const HomePage = () => {
   return (
     <div className="App">
       <Header FontAwesomeIcon={FontAwesomeIcon} faLibrary={library} />
