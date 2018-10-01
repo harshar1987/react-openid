@@ -28,6 +28,8 @@ class Header extends React.Component {
 
   onMicrosoftLogout(e){
     e.preventDefault();
+    const odicUserManager = UserManager.getInstance(oidcProvider.AzureAd);
+    odicUserManager.removeUser()
   }
 
   storeLoginProvider(providerName) {
