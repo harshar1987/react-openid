@@ -1,7 +1,7 @@
 import React from "react";
 import { render } from "react-dom";
 
-import HomePage from "./pages/HomePage";
+import App from "./app";
 
 const rootElement = document.getElementById("root");
-render(<HomePage />, rootElement);
+render(<App />, rootElement);
