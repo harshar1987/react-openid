@@ -48,4 +48,4 @@ export const HomePage = () => {
   );
 };
 
-export default Home;
+
